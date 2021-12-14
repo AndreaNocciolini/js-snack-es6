@@ -3,9 +3,8 @@
 // Usiamo i nuovi metodi degli array foreach o filter.
 
 function generateArray(min, max, ...myNumbers) {
-    const include = myNumbers.filter((element, index) => {
-
-        return index > min && index < max
+    const include = myNumbers.filter((element) => {
+        return element > min && element < max
     })
     return include
 }
