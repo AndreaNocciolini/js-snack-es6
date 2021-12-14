@@ -12,6 +12,10 @@ function generateArray(min, max, ...myNumbers) {
 
 const minNum = Math.floor(Math.random() * 2);
 const maxNum = Math.floor(Math.random() * 10);
+const numbers = [1,2,3,4,5,6,7,8,9,0]
 
-console.log(`Prendiamo i numeri dell'array compresi tra le posizioni ${minNum} e ${maxNum}`)
-console.log(generateArray(minNum,maxNum,1,2,3,4,5,6,7,8,9,0))
+const minPosition = minNum + 1;
+const maxPosition = maxNum - 1;
+console.log(numbers)
+console.log(`Prendiamo i numeri dell'array compresi tra le posizioni ${minPosition} e ${maxPosition}`)
+console.log(generateArray(minNum,maxNum, ...numbers))
